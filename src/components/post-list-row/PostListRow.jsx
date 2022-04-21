@@ -7,7 +7,7 @@ export default class PostListRow extends React.Component {
     
     render() {
         return (
-            <div className="card col-lg-3 my-2 border-0">
+            <div className="card col-lg-3 m-2 rounded">
             <div className="card-title">
                 <p className="fs-5 fw-bold">{ this.props.post.title }</p>
             </div>
@@ -15,9 +15,6 @@ export default class PostListRow extends React.Component {
                 <div className="card-text">
                     <p dangerouslySetInnerHTML={{ __html: this.props.post.excerpt }}></p>
                 </div>
-            </div>
-            <div className="card-footer text-end">
-                <a className="btn btn-warning" href="#">Leggi</a>
             </div>
         </div>  
         );

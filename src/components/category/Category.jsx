@@ -16,7 +16,7 @@ export default class Category extends React.Component {
     }
 
     render() {
-        const list = this.state.categories.map(category => <CategoryList category={category} />);
+        const list = this.state.categories.map(category => <CategoryList category={category} key={category.id}/>);
         
         return (
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

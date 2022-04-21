@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class CategoryList extends React.Component {
     constructor(props){
@@ -7,7 +8,7 @@ export default class CategoryList extends React.Component {
     
     render() {
         return (
-            <li><a className="dropdown-item">{ this.props.category.name }</a></li>
+            <li><Link to={`/categories/${ this.props.category.id }/posts`} className="dropdown-item">{ this.props.category.name }</Link></li>
         );
     }
 }

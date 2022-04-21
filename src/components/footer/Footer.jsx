@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
                         <p id="copyright"><small>&copy;Copyright by <b>Scrooge McDuck</b>. All Rights Reserved</small></p>
                     </div>
                     <div className="col-lg-6 text-end pt-3">
-                        <p><small>Designed by <span className="text-warning">Fidia</span></small></p>
+                        <p><small>Designed by <span className="text-warning">Zeusi</span></small></p>
                     </div>
                 </div>
 	        </footer>
